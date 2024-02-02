@@ -1,3 +1,4 @@
+//add header files as per need
 #include <iostream>
 #include "./headers/Rectangle.h"
 #include "./headers/Circle.h"
@@ -10,12 +11,11 @@ using namespace Shape;
 
 int main(){
     
-    
+    //lopp will iterate till user give choice for exit or wrong choice;
     int choice;
     char choice1;
         do
         {
-
             cout << "Enter your choice \n 1 for Rectangle \n 2 for Square \n 3 for circle \n 4 for line \n 5 for triangle\n 6 for Ellipse";
             cin>>choice;
             switch (choice)

@@ -1,13 +1,14 @@
 namespace Shape
 {
 class Square{
-    private:
-    double length;
     public:
     Square(double length);
-
-    double area();
-    double perimeter();
     ~Square();
+    //return area of Square
+    double area();
+    //return perimeter of square
+    double perimeter();
+    private:
+    double mLength;
 };
 }

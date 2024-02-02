@@ -2,11 +2,13 @@ namespace Shape
 {
 class Ellipse{
     public:
-    double majorAxis,minorAxis;
     Ellipse(double majorAxis,double minorAxis);
-
-    double area();
-    double perimeter();
     ~Ellipse();
+    //return area of circle in double
+    double area();
+    //return perimeter of Ellipse
+    double perimeter();
+    private:
+    double mMajorAxis,mMinorAxis;
 };
 }

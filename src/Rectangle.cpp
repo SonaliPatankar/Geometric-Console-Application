@@ -1,19 +1,21 @@
 #include "../headers/Rectangle.h"
 using namespace Shape;
 
-Rectangle::Rectangle(double l, double b){
-    this->length = l;
-    this->breadth = b;
+Rectangle::Rectangle(double l, double b)
+{
+    this->mLength = l;
+    this->mBreadth = b;
 }
 
-double Rectangle::area(){
-    return length*breadth;
+double Rectangle::area()
+{
+    return mLength * mBreadth;
 }
 double Rectangle::perimeter()
 {
-    return 2*length*breadth;
+    return 2 * mLength * mBreadth;
 }
 
-Rectangle::~Rectangle(){
-    }
-     
+Rectangle::~Rectangle()
+{
+}

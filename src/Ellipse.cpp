@@ -2,24 +2,25 @@
 #include <cmath>
 using namespace Shape;
 
-Ellipse::Ellipse(double a,double b){
- this->majorAxis = a;
- this->minorAxis = b;   
+Ellipse::Ellipse(double a, double b)
+{
+    this->mMajorAxis = a;
+    this->mMinorAxis = b;
 }
 
 double Ellipse::area()
 {
-    return M_PI*majorAxis*minorAxis;
+    return M_PI * mMajorAxis * mMinorAxis;
 }
 
 double Ellipse::perimeter()
 {
-    double perimetereOfEllipse = (majorAxis*majorAxis)+(minorAxis*minorAxis);
-    perimetereOfEllipse = perimetereOfEllipse/2;
-    perimetereOfEllipse = 2 * M_PI*sqrt(perimetereOfEllipse);
+    double perimetereOfEllipse = (mMajorAxis * mMajorAxis) + (mMinorAxis * mMinorAxis);
+    perimetereOfEllipse = perimetereOfEllipse / 2;
+    perimetereOfEllipse = 2 * M_PI * sqrt(perimetereOfEllipse);
     return perimetereOfEllipse;
 }
 
-Ellipse::~Ellipse(){
-    }
-     
+Ellipse::~Ellipse()
+{
+}
