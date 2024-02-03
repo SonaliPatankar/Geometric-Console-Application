@@ -1,14 +1,20 @@
-namespace Shape
-{
-class Square{
+namespace Shape {
+    class Square {
     public:
-    Square(double length);
-    ~Square();
-    //return area of Square
-    double area();
-    //return perimeter of square
-    double perimeter();
+        // Constructor: Initializes the square with given side length
+        Square(double length);
+
+        // Destructor: Cleans up resources, if necessary
+        ~Square();
+
+        // Member function to calculate and return the area of the square
+        double area();
+
+        // Member function to calculate and return the perimeter of the square
+        double perimeter();
+
     private:
-    double mLength;
-};
+        // Private member variable to store the side length of the square
+        double mLength;
+    };
 }

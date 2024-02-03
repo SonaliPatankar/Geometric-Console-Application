@@ -1,16 +1,22 @@
-namespace Shape
-{
-class Triangle{
+namespace Shape {
+    class Triangle {
     public:
-    Triangle(double side1, double side2, double side3);
-    ~Triangle();
-    //return area of triangle
-    double area();
-    //return perimeter of triangle
-    double perimeter();
+        // Constructor: Initializes the triangle with given side lengths
+        Triangle(double side1, double side2, double side3);
+
+        // Destructor: Cleans up resources, if necessary
+        ~Triangle();
+
+        // Member function to calculate and return the area of the triangle
+        double area();
+
+        // Member function to calculate and return the perimeter of the triangle
+        double perimeter();
+
     private:
-    double mSide1;
-    double mSide2;
-    double mSide3;
-};
+        // Private member variables to store the side lengths of the triangle
+        double mSide1;
+        double mSide2;
+        double mSide3;
+    };
 }

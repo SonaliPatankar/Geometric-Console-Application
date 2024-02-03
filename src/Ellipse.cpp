@@ -2,17 +2,19 @@
 #include <cmath>
 using namespace Shape;
 
-Ellipse::Ellipse(double a, double b)
-{
-    this->mMajorAxis = a;
-    this->mMinorAxis = b;
-}
+// Constructor implementation
+Shape::Ellipse::Ellipse(double majorAxis, double minorAxis)
+    : mMajorAxis(majorAxis), mMinorAxis(minorAxis) {}
 
-double Ellipse::area()
-{
+// Destructor implementation
+Shape::Ellipse::~Ellipse() {}
+
+// Area calculation implementation
+double Shape::Ellipse::area() {
     return M_PI * mMajorAxis * mMinorAxis;
 }
 
+// Perimeter calculation implementation (Approximation using Ramanujan's formula)
 double Ellipse::perimeter()
 {
     double perimetereOfEllipse = (mMajorAxis * mMajorAxis) + (mMinorAxis * mMinorAxis);
@@ -21,6 +23,3 @@ double Ellipse::perimeter()
     return perimetereOfEllipse;
 }
 
-Ellipse::~Ellipse()
-{
-}

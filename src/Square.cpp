@@ -1,20 +1,17 @@
 #include "../headers/Square.h"
-using namespace Shape;
 
-Square::Square(double l)
-{
-    mLength = l;
-}
+// Constructor implementation
+Shape::Square::Square(double length) : mLength(length) {}
 
-double Square::area()
-{
+// Destructor implementation
+Shape::Square::~Square() {}
+
+// Area calculation implementation
+double Shape::Square::area() {
     return mLength * mLength;
 }
-double Square::perimeter()
-{
-    return 4 * mLength;
-}
 
-Square::~Square()
-{
+// Perimeter calculation implementation
+double Shape::Square::perimeter() {
+    return 4 * mLength;
 }

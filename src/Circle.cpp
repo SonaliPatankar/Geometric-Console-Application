@@ -1,19 +1,23 @@
 #include "../headers/Circle.h"
-#include<cmath>
-using namespace Shape;
+#include <cmath>
 
-Circle::Circle(double radius1){
-    this->mRadius = radius1;
+// Constructor implementation
+Shape::Circle::Circle(double radius) : mRadius(radius) {}
+
+// Destructor implementation
+Shape::Circle::~Circle() {}
+
+// Area calculation implementation
+double Shape::Circle::area() {
+    return M_PI * mRadius * mRadius;
 }
 
-double Circle:: area(){
-    return M_PI*mRadius;
-}
-double Circle::perimeter()
-{
-    return 2*M_PI*mRadius;
+// Perimeter calculation implementation
+double Shape::Circle::perimeter() {
+    return 2 * M_PI * mRadius;
 }
 
-Circle::~Circle(){
-    }
-     
+// Radius retrieval implementation
+double Shape::Circle::radius() {
+    return mRadius;
+}
